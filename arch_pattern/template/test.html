@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+
+    <title>{% block title %}HEAD{% endblock %} </title>
+    {% endblock %}
+</head>
+<body>
+    <h1>TEST PAGE</h1>
+    <div id="content">{% block content %}{{var}}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+       <a href="www.google.com/">Просто ссылка на гугл в подвале сайта</a>.
+        {% endblock %}
+    </div>
+</body>
+</html>
